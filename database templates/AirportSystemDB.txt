@@ -1,0 +1,66 @@
+create database AirportSystem;
+use AirportSystem;
+
+create table airport(
+ ID int primary key auto_increment unique not null,
+ name varchar(3) not null unique
+);
+
+create table airline(
+ ID int primary key auto_increment unique not null,
+ name varchar(5) not null unique
+);
+
+create table flight(
+ ID int primary key auto_increment unique not null,
+ airline_id int not null,
+ constraint foreign key (airline_id) references airline(ID),
+ origin varchar(3) not null,
+ destination varchar(3) not null,
+ date date not null
+);
+
+create table flight_section(
+ ID int primary key auto_increment unique not null,
+ flight_id int not null,
+ constraint foreign key (flight_id) references flight(ID),
+ `rows` int(100) unsigned not null,
+ cols int(10) unsigned not null,
+ seat_class enum('Economy', 'Business', 'First')
+);
+
+create table seat(
+ ID int primary key auto_increment unique not null,
+ section_id int not null,
+ constraint foreign key (section_id) references flight_section(ID),
+ `row` int not null,
+ col char not null,
+ booked boolean
+);
+
+
+delimiter |
+CREATE trigger DefineSeats
+AFTER INSERT
+ON flight_section FOR EACH ROW
+begin
+
+ declare x INT default 0;
+ declare a INT default 0;
+
+ SET x = 1;
+ SET a = 1;
+ WHILE x <= new.`rows` DO
+ WHILE a <= new.cols DO
+
+ insert into seat(`row`, col, booked, section_id) values(x, CONV(9+a, 10, 36), false, new.ID);
+   
+ SET a=a+1;
+ END WHILE;
+ SET x = x + 1;
+ SET a = 1;
+ END WHILE;
+
+end;
+|
+delimiter ;
