@@ -1,0 +1,41 @@
+﻿@model OnlineStore.MVC.Models.ProductModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<table class="table">
+    <tbody>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        <h4>Category: @Model.CategoryName</h4>
+                    </li>
+                    <li>
+                        <h4>Color: @Model.ColorName</h4>
+                    </li>
+                    <li>
+                        <h4>Product name: @Model.Name</h4>
+                    </li>
+                    <li>
+                        <div class="bg-warning">Price: @Model.Price</div>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <div class="alert-danger">@Model.Description</div>
+            </td>
+            <td>
+                <a asp-action="" asp-route-id=""><h1>|BUY|</h1></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-controller="Categories" asp-action="Details" asp-route-id="@Model.CategoryId">Back to category</a>
+</div>

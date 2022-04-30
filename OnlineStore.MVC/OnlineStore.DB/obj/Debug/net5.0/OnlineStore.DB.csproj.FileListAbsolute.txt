@@ -1,0 +1,15 @@
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\bin\Debug\net5.0\OnlineStore.DB.deps.json
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\bin\Debug\net5.0\OnlineStore.DB.runtimeconfig.json
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\bin\Debug\net5.0\OnlineStore.DB.runtimeconfig.dev.json
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\bin\Debug\net5.0\OnlineStore.DB.dll
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\bin\Debug\net5.0\ref\OnlineStore.DB.dll
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\bin\Debug\net5.0\OnlineStore.DB.pdb
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.csproj.AssemblyReference.cache
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.AssemblyInfoInputs.cache
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.AssemblyInfo.cs
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.csproj.CoreCompileInputs.cache
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.dll
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\ref\OnlineStore.DB.dll
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.pdb
+C:\Users\sisan\source\repos\OnlineStore.MVC\OnlineStore.DB\obj\Debug\net5.0\OnlineStore.DB.genruntimeconfig.cache

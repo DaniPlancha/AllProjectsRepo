@@ -1,0 +1,32 @@
+﻿@model AirlineModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details for Airline @Model.Name</h1>
+<h3>Flights:</h3>
+
+<table class="table">
+    <tbody>
+        @foreach (var item in Model.Flights)
+        {
+            <tr>
+                <td>
+                    From: @Html.DisplayFor(modelItem => item.Origin)
+                    , To: @Html.DisplayFor(modelItem => item.Destination)
+                    , Date: @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    <a asp-controller="Flights" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-controller="Flights" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-controller="Flights" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,28 @@
+﻿@model SectionModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details for section @Model.SeatClass</h1>
+
+<table class="table">
+    <tbody>
+        @foreach (var item in Model.Seats)
+        {
+            <tr>
+                <td>
+                    Position: @Html.DisplayFor(modelItem => item.Row)
+                    @Html.DisplayFor(modelItem => item.Col)
+                    | Booked: @Html.DisplayFor(modelItem => item.Booked)
+                </td>
+                <td>
+                    <a asp-controller="Sections" asp-action="Edit" asp-route-id="@item.Id">Book</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-controller="Flights" asp-action="Details" asp-route-id="@Model.FlightId">Back to flight details</a>
+</div>

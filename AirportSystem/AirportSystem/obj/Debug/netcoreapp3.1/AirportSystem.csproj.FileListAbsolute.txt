@@ -1,0 +1,14 @@
+C:\Users\sisan\source\repos\Daniel\AirportSystem\bin\Debug\netcoreapp3.1\AirportSystem.exe
+C:\Users\sisan\source\repos\Daniel\AirportSystem\bin\Debug\netcoreapp3.1\AirportSystem.deps.json
+C:\Users\sisan\source\repos\Daniel\AirportSystem\bin\Debug\netcoreapp3.1\AirportSystem.runtimeconfig.json
+C:\Users\sisan\source\repos\Daniel\AirportSystem\bin\Debug\netcoreapp3.1\AirportSystem.runtimeconfig.dev.json
+C:\Users\sisan\source\repos\Daniel\AirportSystem\bin\Debug\netcoreapp3.1\AirportSystem.dll
+C:\Users\sisan\source\repos\Daniel\AirportSystem\bin\Debug\netcoreapp3.1\AirportSystem.pdb
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.csproj.AssemblyReference.cache
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.AssemblyInfoInputs.cache
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.AssemblyInfo.cs
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.csproj.CoreCompileInputs.cache
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.dll
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.pdb
+C:\Users\sisan\source\repos\Daniel\AirportSystem\obj\Debug\netcoreapp3.1\AirportSystem.genruntimeconfig.cache

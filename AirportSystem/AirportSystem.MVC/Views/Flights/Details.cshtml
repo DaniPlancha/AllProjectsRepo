@@ -1,0 +1,31 @@
+﻿@model FlightModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Flight @Model.Id, from @Model.Origin to @Model.Destination, date: @Model.Date</h1>
+<h3>Sections:</h3>
+<table class="table">
+    <tbody>
+        @foreach (var item in Model.FlightSections)
+        {
+            <tr>
+                <td>
+                    Seat Class: @Html.DisplayFor(modelItem => item.SeatClass)
+                    , Rows: @Html.DisplayFor(modelItem => item.Rows)
+                    , Cols: @Html.DisplayFor(modelItem => item.Cols)
+                </td>
+                <td>
+                    <a asp-controller="Sections" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-controller="Sections" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-controller="Sections" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-controller="Airlines" asp-action="Details" asp-route-id="@Model.AirlineId">Go to Airline details</a>
+</div>
