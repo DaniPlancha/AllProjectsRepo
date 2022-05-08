@@ -1,0 +1,50 @@
+﻿body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+    color: aqua;
+    font-size: 70px;
+    padding-bottom: 10px;
+    background-color: grey;
+}
+
+.strong {
+    font-style: italic;
+    font-weight: bold;
+    color: aqua;
+}
+
+.congrats {
+    padding-top:40px;
+    padding-bottom:35px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid;
+    border-color: aqua;
+    border-radius: 15px;
+    background-image: url("../Images/money.jpg");
+}
+
+a.big {
+    font-size: 30px;
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 50px;
+}
+
+.extra-info > p {
+    font-size: 30px;
+    color: grey;
+}

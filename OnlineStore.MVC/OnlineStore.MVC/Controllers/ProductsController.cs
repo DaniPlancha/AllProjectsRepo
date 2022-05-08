@@ -41,6 +41,16 @@ namespace OnlineStore.MVC.Controllers
         {
             return View();
         }
+        public IActionResult Buy(int id)
+        {
+            var product = _service.Get(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            _service.Buy(product.Id);
+            return View(product);
+        }
 
         // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
