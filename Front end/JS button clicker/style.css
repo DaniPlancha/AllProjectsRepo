@@ -1,0 +1,82 @@
+h1 {
+    font-size: 70px;
+    font-style: italic;
+    font-family: monospace;
+    color: brown;
+    margin-bottom: 15px;
+}
+
+.profile-description {
+    font-size: 24px;
+    font-style: oblique;
+    color: rgb(69, 87, 149);
+}
+
+body {
+    background-color: honeydew;
+}
+
+.links-list {
+    color: honeydew;
+    margin-left: 265px;
+    margin-top: 360px;
+    padding: 15px 30px;
+    font-size: 40px;
+    width: min-content;
+}
+
+ul>li>a>i:hover {
+    color: brown;
+}
+
+ul>li>a>i {
+    color: darkcyan;
+}
+
+.all-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image-info-wrapper {
+    background-color:rgb(69, 87, 149);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    width: min-content;
+    border: 3px solid;
+    border-radius: 20%;
+}
+
+.info {
+    top: 20px;
+    position: absolute;
+}
+
+.button-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.add1{
+    padding-top: 30px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    border: 2px solid grey;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 35px;
+}
+
+.button{
+    border: 2px solid green;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    font-size: 24px;
+    font-style: oblique;
+}
