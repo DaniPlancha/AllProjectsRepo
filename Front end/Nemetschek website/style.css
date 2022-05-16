@@ -421,3 +421,120 @@ h4{
 .button-send > a:hover{
     color: black;
 }
+
+.contacts-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contacts-row-1{
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    height: 330px;
+    border-bottom: 2px solid #EDEDED;
+}
+
+.all-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us-links{
+    padding-right: 60px;
+}
+
+.solutions-links{
+    padding-right: 160px;
+}
+
+.image-and-button-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    justify-content: space-between;
+}
+
+.contact-us-button{
+    border: 1px solid rgb(255, 101, 44);
+    background-color: rgb(255, 101, 44);
+    text-align: center;
+    border-radius: 5px;
+    width: 165px;
+    height: 35px;
+    padding-top: 16px;
+}
+
+.contact-us-button > a{
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+.contact-us-button > a:hover{
+    color: black;
+}
+
+.all-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.all-links a:hover{
+    color: rgb(230, 139, 4);
+}
+
+.markup-par{
+    width: min-content;
+    border-bottom: 3px solid rgb(255, 101, 44);
+    margin-bottom: 25px;
+    padding-bottom: 4px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.contacts-row-2{
+    font-size: 14px;
+    justify-content: space-between;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    height: 30px;
+}
+
+.rights-reserved{
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.rights-reserved a{
+    color: grey;
+}
+
+.social-media-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 190px;
+}
+
+.social-media-links > a{
+    font-size: 30px;
+    text-decoration: none;
+    color: grey;
+}
+
+.social-media-links > a:hover{
+    color: black;
+}
