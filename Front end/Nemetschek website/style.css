@@ -404,22 +404,22 @@ h4{
 }
 
 .button-send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 101, 44);
-    border: 1px solid rgb(255, 101, 44);
+    border: 2px solid rgb(255, 101, 44);
     border-radius: 5px;
-    width: 112px;
-    height: 30px;
-    padding-top: 12px;
-    text-align: center;
-}
-
-.button-send > a{
+    width: 120px;
+    height: 45px;
     text-decoration: none;
     color: #FFFFFF;
+    transition: 0.25s;
 }
 
-.button-send > a:hover{
-    color: black;
+.button-send:hover{
+    background-color: white;
+    color: rgb(255, 101, 44);
 }
 
 .contacts-wrap{
@@ -461,22 +461,22 @@ h4{
 }
 
 .contact-us-button{
-    border: 1px solid rgb(255, 101, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 101, 44);
     background-color: rgb(255, 101, 44);
-    text-align: center;
     border-radius: 5px;
     width: 165px;
-    height: 35px;
-    padding-top: 16px;
-}
-
-.contact-us-button > a{
+    height: 50px;
     text-decoration: none;
     color: #EDEDED;
+    transition: 0.25s;
 }
 
-.contact-us-button > a:hover{
-    color: black;
+.contact-us-button:hover{
+    background-color: white;
+    color: rgb(255, 101, 44);
 }
 
 .all-links a{
