@@ -1,3 +1,3 @@
 # Hello there!
 Personal projects, games, etc.
-Im a Junior Software Developer who is also an intern and still in school and this repository is for all of my projects (C#, MySQL, HTML, CSS, JavaScript).
+Im a Junior Software Developer who is also an intern and still in school and this repository is for all of my projects (C#, MySQL, HTML, CSS, JavaScript)
