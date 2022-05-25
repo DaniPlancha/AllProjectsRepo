@@ -1,0 +1,14 @@
+C:\Users\sisan\source\repos\BankInterface\BankInterface\bin\Debug\netcoreapp3.1\BankInterface.exe
+C:\Users\sisan\source\repos\BankInterface\BankInterface\bin\Debug\netcoreapp3.1\BankInterface.deps.json
+C:\Users\sisan\source\repos\BankInterface\BankInterface\bin\Debug\netcoreapp3.1\BankInterface.runtimeconfig.json
+C:\Users\sisan\source\repos\BankInterface\BankInterface\bin\Debug\netcoreapp3.1\BankInterface.runtimeconfig.dev.json
+C:\Users\sisan\source\repos\BankInterface\BankInterface\bin\Debug\netcoreapp3.1\BankInterface.dll
+C:\Users\sisan\source\repos\BankInterface\BankInterface\bin\Debug\netcoreapp3.1\BankInterface.pdb
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.csproj.AssemblyReference.cache
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.AssemblyInfoInputs.cache
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.AssemblyInfo.cs
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.csproj.CoreCompileInputs.cache
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.dll
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.pdb
+C:\Users\sisan\source\repos\BankInterface\BankInterface\obj\Debug\netcoreapp3.1\BankInterface.genruntimeconfig.cache
