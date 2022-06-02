@@ -69,3 +69,39 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+/*///////////////////////////////////////////////*/
+
+
+.buttons-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+
+.fancy-button {
+    padding-top: 10px;
+    font-size: 20px;
+    color: darkblue;
+    height: 60px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.fancy-button:hover {
+    text-decoration: none;
+    background-color: lightblue;
+    border-color: black;
+    text-shadow: 2px 2px 4px blue;
+    box-shadow: 2px 2px 4px blue;
+}

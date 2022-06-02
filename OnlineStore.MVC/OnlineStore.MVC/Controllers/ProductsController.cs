@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using OnlineStore.DB;
+﻿using Microsoft.AspNetCore.Mvc;
+using OnlineStore.MVC.Models;
 using OnlineStore.MVC.Services;
 
 namespace OnlineStore.MVC.Controllers
@@ -19,15 +13,9 @@ namespace OnlineStore.MVC.Controllers
             _service = new ProductService();
         }
 
-        // GET: Products/Details/5
-        public IActionResult Details(int? id)
+        public IActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var product = _service.Get(id.Value);
+            var product = _service.Get(id);
             if (product == null)
             {
                 return NotFound();
@@ -36,11 +24,24 @@ namespace OnlineStore.MVC.Controllers
             return View(product);
         }
 
-        // GET: Products/Create
         public IActionResult Create()
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Create(ProductModel product)
+        {
+            _service.Create(product);
+            return RedirectToAction("Index", "Categories");
+        }
+
+        public IActionResult Delete(int id)
+        {
+            _service.Delete(id);
+            return RedirectToAction("Index", "Categories");
+        }
+
         public IActionResult Buy(int id)
         {
             var product = _service.Get(id);

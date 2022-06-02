@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mbLC4AiTLNPLMU30A/Ec4r9YeFPQH5uUBohHFmDxQvPYOZrJtkt8FMJubutc7tWjy+dxSutwUmt1jhuv0kIPKA==",
+  "dgSpecHash": "4T2G/iEcOVfLv2eECx7plyv54j31mR+japgBeKe8Ht/w2N5W14K/fCyeB9OR/TXYLdOqhEYnyANoM2BhgtirUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sisan\\OneDrive\\Documents\\AllProjectsRepo\\OnlineStore.MVC\\OnlineStore.DB\\OnlineStore.DB.csproj",
+  "projectFilePath": "C:\\Users\\sisan\\OneDrive\\Documents\\Important-projects\\OnlineStore.MVC\\OnlineStore.DB\\OnlineStore.DB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sisan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sisan\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
