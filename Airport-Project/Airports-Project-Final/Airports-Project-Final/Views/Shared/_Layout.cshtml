@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/main-style.css" />
+</head>
+
+<body>
+
+    <div class="container-nav">
+        <div class="text-center">
+            <h1 class="display-4">
+                <a asp-controller="Home" asp-action="Index">Daniel Airways&#8482;</a>
+            </h1>
+        </div>
+        <div class="general-links-wrap">
+            <a class="nav-button" asp-controller="Airports" asp-action="Index">Airports</a>
+            <a class="nav-button" asp-controller="Flights" asp-action="Index">Flights</a>
+            <a class="nav-button" asp-controller="Airlines" asp-action="Index">Airlines</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

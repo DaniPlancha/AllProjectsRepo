@@ -1,0 +1,37 @@
+﻿@model Airports_Project_Final.Models.FlightSearchModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="vertical">
+    <h1>Filter</h1>
+        <div class="col-md-4">
+            <form asp-action="Filter">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Origin" class="control-label"></label>
+                    <input asp-for="Origin" class="form-control" />
+                    <span asp-validation-for="Origin" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Destination" class="control-label"></label>
+                    <input asp-for="Destination" class="form-control" />
+                    <span asp-validation-for="Destination" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Date" class="control-label"></label>
+                    <input asp-for="Date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Go!" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

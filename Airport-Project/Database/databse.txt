@@ -1,0 +1,68 @@
+create database airports_project_final_db;
+use airports_project_final_db;
+
+create table Airport(
+	ID int primary key auto_increment unique not null,
+    PORT_ID varchar(3) unique not null,
+    `Name` varchar(50) unique not null,
+    Adress varchar(50) unique not null,
+    City varchar(20) not null,
+    Country varchar(20) not null
+);
+
+create table Airline(
+	ID int primary key auto_increment unique not null,
+	`Name` varchar(5) unique not null
+);
+
+create table Flight(
+	ID int primary key auto_increment unique not null,
+	AirlineId int not null,
+    constraint fl_airline_id foreign key (AirlineId) references Airline(ID) on delete cascade on update cascade,
+    airport_from_id int not null,
+    constraint fl_airport_from_id foreign key (airport_from_id) references Airport(ID) on delete cascade on update cascade,
+	airport_to_id int not null,
+    constraint fl_airport_to_id foreign key (airport_to_id) references Airport(ID) on delete cascade on update cascade,
+    take_off_date datetime not null,
+    landing_date datetime not null
+);
+
+create table Seat(
+	ID int primary key auto_increment unique not null,
+	FlightId int not null,
+    constraint seat_flight_fk foreign key(FlightId) references Flight(ID) on delete cascade on update cascade,
+    Class enum('First', 'Business', 'Economy') not null,
+    `Row` character not null,
+    `Column` int unsigned not null,
+    Booked boolean not null
+);
+
+select * from airport;
+select * from airline;
+select * from flight;
+select * from seat;
+
+insert into seat (flightid, class, `row`, `column`, booked) values (1, 'Economy', 'A', 1, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (1, 'First', 'A', 2, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (1, 'Economy', 'B', 1, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (2, 'Economy', 'B', 3, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (2, 'Economy', 'B', 6, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (3, 'Economy', 'A', 1, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (4, 'First', 'A', 2, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (4, 'Economy', 'B', 1, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (4, 'Economy', 'B', 3, false);
+insert into seat (flightid, class, `row`, `column`, booked) values (4, 'Economy', 'B', 6, false);
+
+insert into airport (PORT_ID, `name`, country, city, adress) values ("SOF", "Sofia Airport", "Bulgaria", "Sofia", "Bulevard „Hristofor Kolumb“ 1, 1540");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("BOJ", "Burgas Airport", "Bulgaria", "Burgas", "Administration floor 2 office 201, 8016 Burgas");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("VAR", "Varna Airport", "Bulgaria", "Varna", "Varna Airport, 9154 Varna");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("PDV", "Plovdiv International Airport", "Bulgaria", "Plovdiv", "4112 Krumovo");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("HND", "Haneda International Airport", "Japan", "Tokyo", "Hanedakuko, Ota City, Tokyo 144-0041");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("ATL", "Hartsfield-Jackson Atlanta International Airport", "USA", "Atlanta", "6000 N Terminal Pkwy, Atlanta, GA 30320");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("DFW", "Dallas/Fort Worth International Airport", "USA", "Texas", "2400 Aviation Dr, DFW Airport, TX 75261");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("ORD", "Chicago O’Hare International Airport", "USA", "Chicago", "10000 W O'Hare Ave, Chicago, IL 60666");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("LAX", "Los Angeles International Airport", "USA", "Los Angeles", "1 World Way, Los Angeles, CA 90045");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("MCO", "Orlando International Airport", "USA", "Orlando", "1 Jeff Fuqua Blvd, Orlando, FL 32827");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("CAN", "Guangzhou Baiyun International Airport", "China", "Guangzhou", "Baiyun, Guangzhou, Guangdong Province");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("CTU", "Chengdu Shuangliu International Airport", "China", "Chengdu", "Shuangliu, Chengdu, Sichuan");
+insert into airport (PORT_ID, `name`, country, city, adress) values ("LAS", "Las Vegas McCarran International Airport", "USA", "Las Vegas", "E Sunset Rd, Las Vegas, NV 89119");
