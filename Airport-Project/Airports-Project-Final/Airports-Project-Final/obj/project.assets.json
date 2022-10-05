@@ -7250,11 +7250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel Todorov\\Documents\\exercises-2021\\Daniel\\Airport-Project\\Airports-Project-Final\\Airports-Project-Final\\Airports-Project-Final.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel Todorov\\Documents\\GitHub\\Important-projects\\Airport-Project\\Airports-Project-Final\\Airports-Project-Final\\Airports-Project-Final.csproj",
       "projectName": "Airports-Project-Final",
-      "projectPath": "C:\\Users\\Daniel Todorov\\Documents\\exercises-2021\\Daniel\\Airport-Project\\Airports-Project-Final\\Airports-Project-Final\\Airports-Project-Final.csproj",
+      "projectPath": "C:\\Users\\Daniel Todorov\\Documents\\GitHub\\Important-projects\\Airport-Project\\Airports-Project-Final\\Airports-Project-Final\\Airports-Project-Final.csproj",
       "packagesPath": "C:\\Users\\Daniel Todorov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel Todorov\\Documents\\exercises-2021\\Daniel\\Airport-Project\\Airports-Project-Final\\Airports-Project-Final\\obj\\",
+      "outputPath": "C:\\Users\\Daniel Todorov\\Documents\\GitHub\\Important-projects\\Airport-Project\\Airports-Project-Final\\Airports-Project-Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daniel Todorov\\AppData\\Roaming\\NuGet\\NuGet.Config",
