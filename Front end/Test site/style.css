@@ -1,0 +1,115 @@
+body {
+    background-color: rgba(58, 57, 57, 0.9);
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(58, 57, 57);
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    flex-wrap: wrap;
+    height: 160px;
+    margin-bottom: 100px;
+    animation: navbar-border-animation 4s infinite;
+}
+
+.navigation-bar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    flex-wrap: wrap;
+}
+
+.navigation-bar-links > a {
+    font-size: 33px;
+    text-decoration: none;
+    color: lightgrey;
+    transition: 0.3s;
+}
+
+.navigation-bar-links > a:hover {
+    /* background: linear-gradient(45deg, white, red, yellow, green, blue); */
+    border: 1px solid rgba(58, 57, 57, 0.355);
+    /* text-shadow: 4px 3px 4px lightgrey;
+    animation: navbar-links-colors-transition 5s infinite; */
+    animation: background-color-change 1s infinite ease-in-out;
+}
+
+@keyframes background-color-change {
+    0% {
+        color: linear-gradient(40deg, white, gold, white, gold, white, gold);
+    }
+    50% {
+        color: linear-gradient(40deg, gold, white, gold, white, gold, white);
+    }
+    100% {
+        color: linear-gradient(40deg, white, gold, white, gold, white, gold);
+    }
+}
+
+@keyframes navbar-links-colors-transition {
+    0% {
+        color: rgb(255, 217, 0);
+        
+    }
+    40% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(255, 217, 0);
+    }
+}
+
+@keyframes navbar-border-animation {
+    0%{
+        border-color: rgb(255,215,0);
+    }
+    40% {
+        border-color: rgb(137, 117, 0);
+    }
+    100% {
+        border-color: rgb(255,215,0);
+    }
+}
+
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    margin: 70px 200px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    animation: navbar-border-animation 4s infinite;
+}
+
+.main-content:nth-of-type(odd) {
+    flex-direction: row;
+    background-color: rgba(37, 23, 87, 0.39);
+}
+
+.main-content:nth-of-type(even) {
+    flex-direction: row-reverse;
+    background-color: rgba(92, 23, 23, 0.39);
+}
+
+.main-content > h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: lightgrey;
+}
