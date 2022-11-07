@@ -42,18 +42,6 @@ body {
     animation: navbar-links-colors-transition 5s infinite;
 }
 
-@keyframes background-color-change {
-    0% {
-        color: linear-gradient(40deg, white, gold, white, gold, white, gold);
-    }
-    50% {
-        color: linear-gradient(40deg, gold, white, gold, white, gold, white);
-    }
-    100% {
-        color: linear-gradient(40deg, white, gold, white, gold, white, gold);
-    }
-}
-
 @keyframes navbar-links-colors-transition {
     0% {
         color: rgb(255, 217, 0);
