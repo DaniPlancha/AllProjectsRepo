@@ -38,11 +38,8 @@ body {
 }
 
 .navigation-bar-links > a:hover {
-    /* background: linear-gradient(45deg, white, red, yellow, green, blue); */
-    border: 1px solid rgba(58, 57, 57, 0.355);
-    /* text-shadow: 4px 3px 4px lightgrey;
-    animation: navbar-links-colors-transition 5s infinite; */
-    animation: background-color-change 1s infinite ease-in-out;
+    text-shadow: 4px 3px 4px lightgrey;
+    animation: navbar-links-colors-transition 5s infinite;
 }
 
 @keyframes background-color-change {
